@@ -2,6 +2,8 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/reverse_words'
 
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 describe "reverse words" do
   describe "basic tests" do
     it "reverse each word in a sentence with one word" do
